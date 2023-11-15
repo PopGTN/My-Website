@@ -1,0 +1,20 @@
+:root {
+/*    --bs-primary: #f50202;
+    --bs-primary-rgb: 222, 22, 22;
+    --bs-primary-bg-subtle: #FF8787FF;
+    --bs-primary-border-subtle: #FF8787FF;*/
+/*  --bs-primary: #28a745;
+    --bs-primary-rgb: 40, 167, 69;
+    --bs-primary-bg-subtle: #d4edda;
+    --bs-primary-border-subtle: #c3e6cb;*/
+
+    --bs-primary: #ffc107;
+    --bs-primary-rgb: 255, 193, 7;
+    --bs-primary-bg-subtle: #fff3cd;
+    --bs-primary-border-subtle: #ffeeba;
+}
+
+:root,
+[data-bs-theme=light] {
+}
+
