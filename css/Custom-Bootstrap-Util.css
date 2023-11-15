@@ -49,6 +49,7 @@
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
 }
+
 /************************************************
 
 Background Colors
@@ -109,7 +110,7 @@ Background Colors
 }
 
 .bs-gray-dark-bg, .bs-gray-dark   {
-    background-color: var(--bs-dark);
+    background-color: var(--bs-gray-dark);
 }
 
 .bs-gray-100-bg, .bs-gray-100   {
@@ -205,7 +206,7 @@ Font Colors
 }
 
 .bs-gray-dark-text, .text-dark {
-    color: var(--bs-dark);
+    color: var(--bs-gray-dark);
 }
 
 .bs-gray-100-text, .text-gray-100 {
