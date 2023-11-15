@@ -4,17 +4,17 @@ CisUtil::autoload("util");
 
 $pageTitle = "Trivia";
 $bodyClasses = '';
-$cssLinks = array("css/bootstrap.css", "css/Custom-Bootstrap-Util.css", "css/root.css", "css/Custom.css");
+//$cssLinks = array("css/bootstrap.css", "css/Custom-Bootstrap-Util.css", "css/root.css", "css/Custom.css");
 include 'fragments/startOfPage.php';
 include "fragments/navbar.php";
 ?>
 
 <?php
 /*Header*/
-$header = new Header(array("YourName's Website","Welcome to my Website"), array("height" => "158px", "textAlign"));
+$header = new Header(array("JoshuaMC","Welcome!"), array("height" => "200px", "textAlign","textDivClasses"=>"", "classes"=>"container"));
 $header->build()
 ?>
-    <main id="main" class="container ">
+    <main id="main" class="container pt-2">
         <h2>Sportsman delighted improving dashwoods gay instantly happiness six</h2>
         <p>Style too own civil out along. Perfectly offending attempted add arranging age gentleman concluded. Get who
             uncommonly our expression ten increasing considered occasional travelling. Ever read tell year give may men
