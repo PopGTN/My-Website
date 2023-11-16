@@ -25,17 +25,17 @@ $root = (!isset($root) ? "" : $root);
                 <li class="nav-item">
                     <a class="nav-link" href="<?=$root?>about">About</a>
                 </li>
-                <li class="nav-item dropdown">
+<!--                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         Dropdown link
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="<?=$root?>#">Action</a></li>
-                        <li><a class="dropdown-item" href="<?=$root?>#">Another action</a></li>
-                        <li><a class="dropdown-item" href="<?=$root?>#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="<?php /*=$root*/?>#">Action</a></li>
+                        <li><a class="dropdown-item" href="<?php /*=$root*/?>#">Another action</a></li>
+                        <li><a class="dropdown-item" href="<?php /*=$root*/?>#">Something else here</a></li>
                     </ul>
-                </li>
+                </li>-->
             </ul>
 
             <ul class="navbar-nav mb-2 mb-lg-0 ">
