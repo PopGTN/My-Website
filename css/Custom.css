@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-#main {
+#main, #main-container {
     flex: 1 0 auto;
 }
 
@@ -14,11 +14,16 @@ footer {
 }
 
 
-
-#main, .bodyColor {
+#main, .body-color,  #main-container  .container {
     background-color: var(--bs-body-bg) !important;
 }
 
+
+
 body {
     background-color: var(--body-bg) !important;
+}
+
+.text-indent {
+    text-indent: 50px;
 }
