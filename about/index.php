@@ -45,7 +45,7 @@ include "../fragments/navbar.php";
 
 <?php
 /*Header*/
-$header = new Header("About ME", array("height" => "158px","Co"));
+$header = new Header("About ME", array("height" => "158px","classes"=>"container"));
 $header->build()
 ?>
     <div id="main-container" class="container">

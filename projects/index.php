@@ -11,8 +11,8 @@ include "../fragments/navbar.php";
 
 <?php
 /*Header*/
-$header = new Header(array("My Projects",'Here are some of my project that I\'m working on my GitHub! <a class="link-primary" href="https://github.com/PopGTN"
-                                                              target="_blank">my GitHub</a>'), array("height" => "200px", "textAlign","textDivClasses"=>"", "classes"=>"container"));
+$header = new Header(array("My Projects",'Here are some of my project that I\'m working on <a class="link-primary" href="https://github.com/PopGTN"
+                                                              target="_blank">my GitHub</a>!'), array("height" => "200px", "textAlign","textDivClasses"=>"", "classes"=>"container"));
 $header->build()
 ?>
     <main id="main" class="container pt-2">
