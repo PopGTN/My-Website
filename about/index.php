@@ -2,9 +2,9 @@
 //This root variable is used for a reference point for the navbar links
 $root = "../";
 require_once '../util/CisUtil.class.php';
-
-
-$pageTitle = "JoshuaMC | About";
+$canonical = "about";
+$pageTitle = "About Joshua Mckenna";
+$description = "Joshua Mckenna, who is he? Well, I am just a guy who is 21 years old and loves making and creating things from my imagination, starting from the...";
 $headHtml = '
 <style>
 #tboc {
@@ -45,13 +45,13 @@ include "../fragments/navbar.php";
 
 <?php
 /*Header*/
-$header = new Header("About ME", array("height" => "158px","classes"=>"container"));
+$header = new Header("About ME", array("height" => "158px", "classes" => "container"));
 $header->build()
 ?>
     <div id="main-container" class="container">
         <div class="row">
-            <aside class="pt-2  col-md-3 mb-2" style="position: sticky">
-                <div id="tboc" class="card">
+            <aside class="pt-2  col-12 col-md-3 mb-1 flex-grow-1" style="position: sticky">
+                <div id="tboc" class="card ">
                     <h5 class="px-1 bg-dark-subtle py-1 text-center">Table Of Contents</h5>
                     <ol class="list-group-numbered">
                         <li class="list-group-item"><a href="#">About Me</a></li>
@@ -62,43 +62,48 @@ $header->build()
                     </ol>
                 </div>
             </aside>
-            <main id="" class="body-color pt-2 col-md-9">
-                <article class="">
-                    <h2 class="bg-dark-subtle px-2 pb-1 m-0">About Me</h2>
-                    <section id="About-Me" class="overflow-hidden">
-                        <figure id="picture" class=" figure float-end border-2 border-dark py-2 px-2  mx-2 mb-2 mt-1"
+            <main id="main-container" class="body-color pt-2 col-12 col-md-9">
+                <article class="document-fluid">
+                    <h2 class="bg-dark-subtle px-2 m-0">About Me</h2>
+                    <section id="About-Me" class="overflow-y-hidden">
+                        <figure id="picture"
+                                class="figure border-2 border-dark py-2 px-2  mx-2 mb-2 mt-1 float-lg-end"
                                 style="width: fit-content; height: fit-content;">
                             <picture style="height: fit-content; width: fit-content;">
-                               <!-- <source media="(min-width: 1200px)" srcset="photos/profile_250x333.jpg">-->
+                                <!-- <source media="(min-width: 1200px)" srcset="photos/profile_250x333.jpg">-->
                                 <source media="(min-width: 992px)" srcset="photos/profile_200x267.jpg">
                                 <source media="(min-width: 992px)" srcset="photos/profile_150x200.jpg">
-<!--                                <source media="(min-width: 576px)" srcset="photos/profile_100x133.jpg">-->
+                                <!--<source media="(min-width: 576px)" srcset="photos/profile_100x133.jpg">-->
                                 <img src="photos/profile_150x200.jpg" class="figure-img img-fluid rounded"
                                      alt="A picture of Joshua">
                             </picture>
                             <p class="px-2 mt-0 m-0">
-                            <figcaption id="photoFig" class="figure-caption fs-6">A picture of Joshua Mckenna</figcaption>
+                            <figcaption id="photoFig" class="figure-caption fs-6">A picture of Joshua Mckenna
+                            </figcaption>
                         </figure>
+                        <p class="text-indent lh-lg" style="word-break:; hyphens: auto">
+                            Joshua Mckenna, who is he? Well, I am just a guy who is 21 years old and loves making
+                            and
+                            creating things from my imagination, starting from the time I was young and building
+                            things
+                            like
+                            a
+                            house module out of lego... then switching to Minecraft. Eventually, I got into building
+                            and
+                            moderating Minecraft servers like Lifeboat Network. I also ran my own Minecraft server
+                            called
+                            Swiftraid, a faction server with its own custom plugins. In my free time, I also play
+                            Call
+                            of
+                            Duty
 
-                        <span class="text-indent lh-lg fs-6" style="word-break: break-all">
-                        Joshua Mckenna, who is he? Well, I am just a guy who is 21 years old and loves making
-                        and
-                        creating things from my imagination, starting from the time I was young and building things
-                        like
-                        a
-                        house module out of lego... then switching to Minecraft. Eventually, I got into building and
-                        moderating Minecraft servers like Lifeboat Network. I also ran my own Minecraft server
-                        called
-                        Swiftraid, a faction server with its own custom plugins. In my free time, I also play Call
-                        of
-                        Duty
-                        <span>
-                        on PS4 and a lot of other games. I enjoy mountain biking, four-wheeling, snorkeling, and a
-                        lot
-                        more.
-                        </span>
-                        </span>
+                            on PS4 and a lot of other games. I enjoy mountain biking, four-wheeling, snorkeling, and
+                            a
+                            lot
+                            more.
+
                         </p>
+
                     </section>
                     <section id="Skills">
                         <h2 class="bg-dark-subtle px-2 pb-1">Skills</h2>
@@ -220,6 +225,9 @@ $header->build()
 
                 </article>
             </main>
+            <aside class="pt-2  col-auto flex-fill" style="position: sticky">
+
+            </aside>
         </div>
     </div>
 <?php
