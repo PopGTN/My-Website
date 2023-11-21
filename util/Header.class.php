@@ -25,7 +25,7 @@ class Header
         'bgRepeat' => 'no-repeat',
         'bgPosition' => 'center',
         'bgSize' => 'cover',
-        'alignText' => "center"
+        'alignText' => "start"
     ];
     private $text;
     private $style;
